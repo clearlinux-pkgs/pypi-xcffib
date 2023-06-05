@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-xcffib
-Version  : 1.3.0
-Release  : 1
-URL      : https://files.pythonhosted.org/packages/e9/3e/d513b437d2e24d7c27bb435e11470ea343aae8666ab8e41510adb132d9b9/xcffib-1.3.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e9/3e/d513b437d2e24d7c27bb435e11470ea343aae8666ab8e41510adb132d9b9/xcffib-1.3.0.tar.gz
+Version  : 1.4.0
+Release  : 2
+URL      : https://files.pythonhosted.org/packages/bb/50/2945cc1a58db61824b76104c33a8b553f39193d29e11cc50ce2e27ba6ce9/xcffib-1.4.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/bb/50/2945cc1a58db61824b76104c33a8b553f39193d29e11cc50ce2e27ba6ce9/xcffib-1.4.0.tar.gz
 Summary  : A drop in replacement for xpyb, an XCB python binding
 Group    : Development/Tools
 License  : Apache-2.0
@@ -52,10 +52,10 @@ python3 components for the pypi-xcffib package.
 
 
 %prep
-%setup -q -n xcffib-1.3.0
-cd %{_builddir}/xcffib-1.3.0
+%setup -q -n xcffib-1.4.0
+cd %{_builddir}/xcffib-1.4.0
 pushd ..
-cp -a xcffib-1.3.0 buildavx2
+cp -a xcffib-1.4.0 buildavx2
 popd
 
 %build
@@ -63,15 +63,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1681784065
+export SOURCE_DATE_EPOCH=1685981071
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
