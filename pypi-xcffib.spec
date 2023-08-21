@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-xcffib
-Version  : 1.4.0
-Release  : 2
-URL      : https://files.pythonhosted.org/packages/bb/50/2945cc1a58db61824b76104c33a8b553f39193d29e11cc50ce2e27ba6ce9/xcffib-1.4.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/bb/50/2945cc1a58db61824b76104c33a8b553f39193d29e11cc50ce2e27ba6ce9/xcffib-1.4.0.tar.gz
+Version  : 1.5.0
+Release  : 3
+URL      : https://files.pythonhosted.org/packages/80/79/69a7239a42ebe3054c32857124caa26e84024fce2fd56616091a047fe7fa/xcffib-1.5.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/80/79/69a7239a42ebe3054c32857124caa26e84024fce2fd56616091a047fe7fa/xcffib-1.5.0.tar.gz
 Summary  : A drop in replacement for xpyb, an XCB python binding
 Group    : Development/Tools
 License  : Apache-2.0
@@ -52,10 +52,10 @@ python3 components for the pypi-xcffib package.
 
 
 %prep
-%setup -q -n xcffib-1.4.0
-cd %{_builddir}/xcffib-1.4.0
+%setup -q -n xcffib-1.5.0
+cd %{_builddir}/xcffib-1.5.0
 pushd ..
-cp -a xcffib-1.4.0 buildavx2
+cp -a xcffib-1.5.0 buildavx2
 popd
 
 %build
@@ -63,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685981071
+export SOURCE_DATE_EPOCH=1692631138
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
