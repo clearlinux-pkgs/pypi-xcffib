@@ -5,7 +5,7 @@
 #
 Name     : pypi-xcffib
 Version  : 1.5.0
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/80/79/69a7239a42ebe3054c32857124caa26e84024fce2fd56616091a047fe7fa/xcffib-1.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/80/79/69a7239a42ebe3054c32857124caa26e84024fce2fd56616091a047fe7fa/xcffib-1.5.0.tar.gz
 Summary  : A drop in replacement for xpyb, an XCB python binding
