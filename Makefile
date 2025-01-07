@@ -1,5 +1,5 @@
 PKG_NAME := pypi-xcffib
-URL = https://files.pythonhosted.org/packages/f7/5f/34e407ba14f8cff1bad78b4ff683bfc44a5f649bb1d2b42a94c5f07f08d0/xcffib-1.6.0.tar.gz
+URL = https://files.pythonhosted.org/packages/71/c0/bf20b371ceed0569a1d59647af56b1898425ddf711fa72e535adcb2f08d3/xcffib-1.6.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
