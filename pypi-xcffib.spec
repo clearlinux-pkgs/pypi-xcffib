@@ -7,7 +7,7 @@
 #
 Name     : pypi-xcffib
 Version  : 1.7.1
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/f6/35/66ce426a1dea2dc8ebf7035fd0ebb4ab5f47453f12087ea540fe7a425ff5/xcffib-1.7.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f6/35/66ce426a1dea2dc8ebf7035fd0ebb4ab5f47453f12087ea540fe7a425ff5/xcffib-1.7.1.tar.gz
 Summary  : xcffib is the XCB binding for python
